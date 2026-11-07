@@ -1,29 +1,32 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en" data-page="home">
 <head>
   <meta charset="utf-8">
+  <script src="./site-language.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ev-Cabinet — 개발자 최인규가 만든 앱과 프로젝트를 소개하는 개인 홈페이지입니다.">
+  <meta name="description" content="Ev-Cabinet — Apps and projects by independent developer Choi In-gyu.">
   <meta name="theme-color" content="#f4f5ef">
-  <title>Ev-Cabinet — Apps by 최인규</title>
+  <title>Ev-Cabinet — Apps by Choi In-gyu</title>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="canonical" href="https://evilack.github.io/index.html">
+  <link rel="alternate" hreflang="en" href="https://evilack.github.io/index.html">
+  <link rel="alternate" hreflang="ko" href="https://evilack.github.io/index-ko.html">
+  <link rel="alternate" hreflang="x-default" href="https://evilack.github.io/index.html">
+  <link rel="stylesheet" href="./localization.css">
 </head>
-<body>
-  <a class="skip-link" href="#main">본문으로 바로가기</a>
+<body class="home-page localized-page">
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="/" aria-label="홈으로">
+    <a class="brand" href="./index.html" aria-label="Home">
       <span class="brand-mark" aria-hidden="true">EV</span>
       <span>Ev-Cabinet</span>
     </a>
-    <nav aria-label="주요 메뉴">
-      <a href="#app">Work</a>
-      <a href="#about">About</a>
+    <nav aria-label="Main navigation">
+      <a href="./index.html#app">Work</a>
       <a href="https://evilack.github.io/portfolio/">Portfolio</a>
-      <a class="github-link" href="https://github.com/evilack" target="_blank" rel="noreferrer">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.24c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.74-1.55-2.57-.3-5.27-1.29-5.27-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.16 1.18a10.96 10.96 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.42-2.71 5.39-5.29 5.68.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/></svg>
-        <span>GitHub</span>
-      </a>
+      <a class="support-nav" href="./donate.html">Support</a>
+      <a class="language-link" href="./index-ko.html?lang=ko" lang="ko" hreflang="ko">한국어</a>
     </nav>
   </header>
 
@@ -31,13 +34,13 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-title">
         <p class="eyebrow"><span></span> Independent developer</p>
-        <h1 id="hero-title">복잡한 문제를<br><em>조용히 해결합니다.</em></h1>
+        <h1 id="hero-title">Complex problems.<br><em>Quiet solutions.</em></h1>
       </div>
       <div class="hero-copy">
-        <p>게임 엔진과 실시간 시스템을 다뤄온 경험으로, 일상의 작은 마찰을 줄이는 제품을 설계합니다.</p>
+        <p>Drawing on my experience with game engines and real-time systems, I design products that reduce everyday friction.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#app">프로젝트 살펴보기 <span aria-hidden="true">↓</span></a>
-          <a class="button button-quiet" href="https://evilack.github.io/portfolio/">경력 포트폴리오</a>
+          <a class="button button-primary" href="#app">Explore projects <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="https://evilack.github.io/portfolio/">Career portfolio</a>
         </div>
       </div>
     </section>
@@ -46,14 +49,14 @@
       <div class="section-heading">
         <div>
           <p class="section-kicker">Selected product</p>
-          <h2 id="work-title">아이디어를 제품으로</h2>
+          <h2 id="work-title">Turning ideas into products</h2>
         </div>
         <p class="section-index">01 / QuietMic</p>
       </div>
 
       <article class="app-card">
         <div class="app-visual">
-          <img src="./assets/quietmic.png" alt="QuietMic의 마이크 입력과 처리 상태 화면" width="1600" height="1000">
+          <img src="./assets/quietmic.png" alt="QuietMic microphone input and processing status screen" width="1600" height="1000">
         </div>
         <div class="app-copy">
           <div class="app-meta"><span>Windows 11</span><span>Open source · MIT</span></div>
@@ -61,16 +64,16 @@
             <img src="./assets/quietmic-icon.png" alt="" width="52" height="52">
             <h3>QuietMic</h3>
           </div>
-          <p class="app-description">키보드 타건음과 주변 소음을 실시간으로 줄여 주는 가벼운 Windows 가상 마이크입니다. 오디오는 PC 밖으로 전송하거나 저장하지 않습니다.</p>
+          <p class="app-description">A lightweight virtual microphone for Windows that reduces keyboard sounds and background noise in real time. Your audio stays on your PC and is never recorded.</p>
           <ul class="feature-list">
-            <li><span aria-hidden="true">01</span> RNNoise 기반 실시간 소음 제거</li>
-            <li><span aria-hidden="true">02</span> 키보드 저주파 진동을 줄이는 하이패스 필터</li>
-            <li><span aria-hidden="true">03</span> 자연스러운 음성부터 조용한 환경까지 프리셋 제공</li>
-            <li><span aria-hidden="true">04</span> 한국어를 포함한 8개 언어 지원</li>
+            <li><span aria-hidden="true">01</span> Real-time noise suppression powered by RNNoise</li>
+            <li><span aria-hidden="true">02</span> High-pass filtering to reduce low-frequency keyboard vibrations</li>
+            <li><span aria-hidden="true">03</span> Presets for natural speech and quieter environments</li>
+            <li><span aria-hidden="true">04</span> Eight languages, including Korean</li>
           </ul>
           <div class="app-actions">
-            <a class="button button-outline" href="https://github.com/evilack/QuietMic" target="_blank" rel="noreferrer">소스 보기 <span aria-hidden="true">↗</span></a>
-            <a class="button button-primary" href="https://github.com/evilack/QuietMic/releases" target="_blank" rel="noreferrer">다운로드 <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="https://github.com/evilack/QuietMic" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="https://github.com/evilack/QuietMic/releases" target="_blank" rel="noreferrer">Download <span aria-hidden="true">↓</span></a>
           </div>
         </div>
       </article>
@@ -79,15 +82,15 @@
     <section class="about" id="about" aria-labelledby="about-title">
       <div>
         <p class="section-kicker">Engine programmer · 18+ years</p>
-        <h2 id="about-title">엔진부터 제품까지,<br>문제의 뿌리를 추적합니다.</h2>
+        <h2 id="about-title">From engines to products,<br>I get to the root of the problem.</h2>
       </div>
       <div class="about-copy">
-        <p>Unreal Engine 5 엔진 업그레이드, 렌더링 최적화, 월드 스트리밍, 충돌 데이터와 빌드 인프라까지 프로젝트의 기반을 분석하고 안정화해 왔습니다.</p>
-        <a class="portfolio-link" href="https://evilack.github.io/portfolio/">경력과 프로젝트 보기 <span aria-hidden="true">↗</span></a>
+        <p>I have analyzed and stabilized the foundations of projects, from Unreal Engine 5 upgrades and rendering optimization to world streaming, collision data, and build infrastructure.</p>
+        <a class="portfolio-link" href="https://evilack.github.io/portfolio/">View experience and projects <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
-    <div class="tech-list" aria-label="주요 기술">
+    <div class="tech-list" role="group" aria-label="Core technologies">
       <span>C++20</span><span>Unreal Engine 5</span><span>Rendering</span><span>World Streaming</span><span>Build &amp; Tooling</span><span>Slint</span><span>RNNoise</span>
     </div>
   </main>
@@ -95,6 +98,7 @@
   <footer>
     <span>© 2026 Ev-Cabinet</span>
     <span>Built with care in Seoul.</span>
+    <a href="./donate.html">Support Ev-Cabinet</a>
   </footer>
 </body>
 </html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko" data-page="home">
+<head>
+  <meta charset="utf-8">
+  <script src="./site-language.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ev-Cabinet — 개발자 최인규가 만든 앱과 프로젝트를 소개하는 개인 홈페이지입니다.">
+  <meta name="theme-color" content="#f4f5ef">
+  <title>Ev-Cabinet — 최인규의 앱과 프로젝트</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="canonical" href="https://evilack.github.io/index-ko.html">
+  <link rel="alternate" hreflang="en" href="https://evilack.github.io/index.html">
+  <link rel="alternate" hreflang="ko" href="https://evilack.github.io/index-ko.html">
+  <link rel="alternate" hreflang="x-default" href="https://evilack.github.io/index.html">
+  <link rel="stylesheet" href="./localization.css">
+</head>
+<body class="home-page localized-page">
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+  <header class="site-header">
+    <a class="brand" href="./index-ko.html" aria-label="홈으로">
+      <span class="brand-mark" aria-hidden="true">EV</span>
+      <span>Ev-Cabinet</span>
+    </a>
+    <nav aria-label="주요 메뉴">
+      <a href="./index-ko.html#app">프로젝트</a>
+      <a href="https://evilack.github.io/portfolio/">포트폴리오</a>
+      <a class="support-nav" href="./donate-ko.html">개발 후원</a>
+      <a class="language-link" href="./index.html?lang=en" lang="en" hreflang="en">English</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-title">
+        <p class="eyebrow"><span></span> 독립 개발자</p>
+        <h1 id="hero-title">복잡한 문제를<br><em>조용히 해결합니다.</em></h1>
+      </div>
+      <div class="hero-copy">
+        <p>게임 엔진과 실시간 시스템을 다뤄온 경험으로, 일상의 작은 마찰을 줄이는 제품을 설계합니다.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#app">프로젝트 살펴보기 <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="https://evilack.github.io/portfolio/">경력 포트폴리오</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="app" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">주요 제품</p>
+          <h2 id="work-title">아이디어를 제품으로</h2>
+        </div>
+        <p class="section-index">01 / QuietMic</p>
+      </div>
+
+      <article class="app-card">
+        <div class="app-visual">
+          <img src="./assets/quietmic.png" alt="QuietMic의 마이크 입력과 처리 상태 화면" width="1600" height="1000">
+        </div>
+        <div class="app-copy">
+          <div class="app-meta"><span>Windows 11</span><span>오픈 소스 · MIT</span></div>
+          <div class="app-name">
+            <img src="./assets/quietmic-icon.png" alt="" width="52" height="52">
+            <h3>QuietMic</h3>
+          </div>
+          <p class="app-description">키보드 타건음과 주변 소음을 실시간으로 줄여 주는 가벼운 Windows 가상 마이크입니다. 오디오는 PC 밖으로 전송하거나 저장하지 않습니다.</p>
+          <ul class="feature-list">
+            <li><span aria-hidden="true">01</span> RNNoise 기반 실시간 소음 제거</li>
+            <li><span aria-hidden="true">02</span> 키보드 저주파 진동을 줄이는 하이패스 필터</li>
+            <li><span aria-hidden="true">03</span> 자연스러운 음성부터 조용한 환경까지 프리셋 제공</li>
+            <li><span aria-hidden="true">04</span> 한국어를 포함한 8개 언어 지원</li>
+          </ul>
+          <div class="app-actions">
+            <a class="button button-outline" href="https://github.com/evilack/QuietMic" target="_blank" rel="noreferrer">소스 보기 <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="https://github.com/evilack/QuietMic/releases" target="_blank" rel="noreferrer">다운로드 <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div>
+        <p class="section-kicker">엔진 프로그래머 · 18년 이상의 경험</p>
+        <h2 id="about-title">엔진부터 제품까지,<br>문제의 뿌리를 추적합니다.</h2>
+      </div>
+      <div class="about-copy">
+        <p>Unreal Engine 5 엔진 업그레이드, 렌더링 최적화, 월드 스트리밍, 충돌 데이터와 빌드 인프라까지 프로젝트의 기반을 분석하고 안정화해 왔습니다.</p>
+        <a class="portfolio-link" href="https://evilack.github.io/portfolio/">경력과 프로젝트 보기 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <div class="tech-list" role="group" aria-label="주요 기술">
+      <span>C++20</span><span>Unreal Engine 5</span><span>렌더링</span><span>월드 스트리밍</span><span>빌드 및 도구</span><span>Slint</span><span>RNNoise</span>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 Ev-Cabinet</span>
+    <span>서울에서 정성을 담아 만듭니다.</span>
+    <a href="./donate-ko.html">Ev-Cabinet 개발 후원</a>
+  </footer>
+</body>
+</html>

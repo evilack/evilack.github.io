@@ -1,0 +1,36 @@
+{
+  "change": "Reuse approved existing project icons; no new generation, resizing file, retouching or shape changes.",
+  "displaySize": 32,
+  "reviewedDisplaySizes": [
+    16,
+    24,
+    32,
+    48
+  ],
+  "reviewedThemes": [
+    "light",
+    "dark"
+  ],
+  "review": "Screenshots: docs/evidence/project-icons-2026-11-08/local. Names and native radio controls remain visible.",
+  "assets": [
+    {
+      "project": "all",
+      "source": "src/assets/favicon.svg",
+      "reuse": "Existing site favicon; vector brand mark preserved unchanged.",
+      "sha256": "243a7d55cb3559031244cb99cbfafb49a7872e2d66be2a5ab5f22b82f78e4028"
+    },
+    {
+      "project": "quietmic",
+      "source": "src/assets/quietmic-icon.png",
+      "reuse": "Existing 128px homepage production icon preserved unchanged.",
+      "sha256": "334cfd35cebadbc2e4e26cc8d0d36a8f2368ee38547485c62c15a3081843afe7"
+    },
+    {
+      "project": "mdownloader",
+      "source": "src/assets/mdownloader-icon.png",
+      "origin": "E:/Project/MDownloader/extension/icons/app-media-128.png",
+      "reuse": "Existing 128px production app icon reused from the extension manifest.",
+      "sha256": "3b3f6bae1a6e7fb4864785b380ea9097977f1f02dc21f61095f3caf02f991369"
+    }
+  ]
+}

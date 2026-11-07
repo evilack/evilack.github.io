@@ -54,7 +54,7 @@ function renderPage(project, language, family, assets, body) {
     components.technologies = `<div class="tech-list" role="group" aria-label="${escapeHtml(text.technologies.label)}">${text.technologies.items.map(label => `<span>${escapeHtml(label)}</span>`).join('')}</div>`;
   }
   if (text.picker) {
-    components.projectPicker = renderProjectPicker(site, language, text.picker, names);
+    components.projectPicker = renderProjectPicker(site, language, text.picker, names, assets.media);
     components.whyTitle = inlineMarkup(text.why.title);
     components.fundUses = `<div class="fund-uses">${text.why.uses.map((use, index) => `<div><span>${String(index + 1).padStart(2, '0')}</span><p><strong>${escapeHtml(use.title)}</strong>${escapeHtml(use.description)}</p></div>`).join('')}</div>`;
     components.faq = `<div class="faq-list">${text.faq.items.map(item => `<details><summary>${escapeHtml(item.question)}</summary><p>${escapeHtml(item.answer)}</p></details>`).join('')}</div>`;

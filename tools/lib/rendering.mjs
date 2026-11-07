@@ -64,15 +64,18 @@ export function renderHeader(site, language, family, text) {
 }
 
 /** DOM 식별자도 설정에서 생성해 템플릿과 브라우저가 서로 다른 이름을 갖지 않게 합니다. */
-export function renderProjectPicker(site, language, text, variables) {
+export function renderProjectPicker(site, language, text, variables, media) {
   const dom = site.dom;
   const projects = site.support.projects;
   const defaultProject = projects.find(project => project.id === site.support.defaultProject);
+  // 프로젝트별 파일명은 공통 자산 카탈로그에서만 조회합니다. 일반 목록과 직접 링크에
+  // 같은 마크업을 사용하며, 이름이 이미 옆에 있으므로 아이콘은 중복해서 읽지 않습니다.
+  const icon = project => `<img class="project-icon" src="${escapeHtml(media[project.icon].src)}" alt="" width="${site.support.iconSize}" height="${site.support.iconSize}">`;
   const options = projects.map(project => {
     const id = dom.radioIdPrefix + project.id;
-    return `<label class="project-option" for="${escapeHtml(id)}"><input type="radio" id="${escapeHtml(id)}" name="${escapeHtml(dom.radioName)}" value="${escapeHtml(project.id)}"${project === defaultProject ? ' checked' : ''}><span>${escapeHtml(projectLabel(project, language, variables))}</span></label>`;
+    return `<label class="project-option" for="${escapeHtml(id)}"><input type="radio" id="${escapeHtml(id)}" name="${escapeHtml(dom.radioName)}" value="${escapeHtml(project.id)}"${project === defaultProject ? ' checked' : ''}>${icon(project)}<span>${escapeHtml(projectLabel(project, language, variables))}</span></label>`;
   });
-  const fallback = projects.map(project => `<a href="${escapeHtml(project.payment.url)}" data-direct-project="${escapeHtml(project.id)}">${escapeHtml(projectLabel(project, language, variables))} <span aria-hidden="true">↗</span></a>`);
+  const fallback = projects.map(project => `<a href="${escapeHtml(project.payment.url)}" data-direct-project="${escapeHtml(project.id)}">${icon(project)}<span class="project-label">${escapeHtml(projectLabel(project, language, variables))}</span><span aria-hidden="true">↗</span></a>`);
   return `<p class="project-choice-note" id="${escapeHtml(dom.choiceNoteId)}">${escapeHtml(text.note)}</p>
         <fieldset class="project-picker" id="${escapeHtml(dom.pickerId)}" aria-describedby="${escapeHtml(dom.choiceNoteId)}" hidden><legend>${escapeHtml(text.legend)}</legend><div class="project-options">${options.join('\n')}</div></fieldset>
         <div class="project-fallback-links" id="${escapeHtml(dom.fallbackId)}"><p>${escapeHtml(text.fallback)}</p>${fallback.join('\n')}</div>

@@ -40,6 +40,7 @@ export function validateSite(site, locales) {
     for (const code of Object.values(page.aliases)) require(languages.includes(code), '호환 페이지의 언어가 잘못되었습니다.');
   }
   const ids = new Set();
+  require(Number.isInteger(site.support.iconSize) && site.support.iconSize > 0, '프로젝트 아이콘 표시 크기는 양의 정수여야 합니다.');
   // 정적 호스팅의 루트 진입점은 index.html입니다. 이름을 바꿀 때는 이 호환 주소를 남겨야 합니다.
   require([...Object.values(site.pages.home.routes), ...Object.keys(site.pages.home.aliases)].includes('index.html'),
     '홈페이지에는 정적 호스팅의 루트 진입점 index.html이 필요합니다. 경로를 바꿀 때 호환 주소로 유지해 주세요.');
@@ -48,6 +49,7 @@ export function validateSite(site, locales) {
   require(documentIds.every(id => /^[A-Za-z][\w-]*$/.test(id)) && new Set(documentIds).size === documentIds.length,
     '문서 ID는 공백 없는 고유 식별자여야 합니다.');
   for (const project of site.support.projects) {
+    require(site.assets[project.icon], '프로젝트 아이콘이 자산 카탈로그에 없습니다: ' + project.id);
     require(/^[a-z][a-z0-9-]*$/.test(project.id) && !ids.has(project.id), '프로젝트 식별자가 잘못되었거나 중복되었습니다.');
     ids.add(project.id);
     for (const code of languages) require(project.name || project.labels?.[code], `${project.id}/${code} 표시 이름이 없습니다.`);

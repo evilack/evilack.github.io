@@ -95,7 +95,8 @@
         "payment": {
           "url": "https://www.paypal.com/ncp/payment/U3EX8XP6BREYA",
           "itemName": "Ev-Cabinet — One-time developer support"
-        }
+        },
+        "icon": "favicon"
       },
       {
         "id": "quietmic",
@@ -104,7 +105,8 @@
         "payment": {
           "url": "https://www.paypal.com/ncp/payment/WWM6KYZ4E3S2W",
           "itemName": "Ev-Cabinet — QuietMic support"
-        }
+        },
+        "icon": "quietmicIcon"
       },
       {
         "id": "mdownloader",
@@ -113,11 +115,13 @@
         "payment": {
           "url": "https://www.paypal.com/ncp/payment/8SAZVLEDCZFNU",
           "itemName": "Ev-Cabinet — MDownloader support"
-        }
+        },
+        "icon": "mdownloaderIcon"
       }
     ],
     "currency": "USD",
-    "providerName": "PayPal"
+    "providerName": "PayPal",
+    "iconSize": 32
   },
   "dom": {
     "settingsId": "site-settings",
@@ -147,6 +151,12 @@
       "output": "assets/quietmic-icon.png",
       "width": 52,
       "height": 52
+    },
+    "mdownloaderIcon": {
+      "source": "mdownloader-icon.png",
+      "output": "assets/mdownloader-icon.png",
+      "width": 128,
+      "height": 128
     }
   }
 }

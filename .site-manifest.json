@@ -3,6 +3,7 @@
     ".nojekyll",
     "assets/home-IJCI4ZMP.js",
     "assets/home-IJCI4ZMP.js.map",
+    "assets/mdownloader-icon.png",
     "assets/quietmic-icon.png",
     "assets/quietmic.png",
     "assets/support-KAIWX2MN.js",
@@ -19,20 +20,21 @@
   ],
   "bytes": {
     "styles.css": 5885,
-    "support.css": 5762,
+    "support.css": 5938,
     "localization.css": 2324,
     "favicon.svg": 211,
     "assets/quietmic.png": 67838,
     "assets/quietmic-icon.png": 9039,
+    "assets/mdownloader-icon.png": 7864,
     "assets/home-IJCI4ZMP.js.map": 15948,
     "assets/home-IJCI4ZMP.js": 2804,
     "assets/support-KAIWX2MN.js.map": 22931,
     "assets/support-KAIWX2MN.js": 4879,
     "index.html": 6772,
     "index-ko.html": 7026,
-    "donate.html": 8693,
-    "donate-ko.html": 9121,
-    "donate-en.html": 8693,
+    "donate.html": 9309,
+    "donate-ko.html": 9737,
+    "donate-en.html": 9309,
     ".nojekyll": 0
   }
 }

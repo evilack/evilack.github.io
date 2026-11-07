@@ -8,6 +8,11 @@
 .project-option:has(input:checked) { border-color:var(--accent); background:var(--surface-soft); }
 .project-option:focus-within { outline:2px solid var(--accent); outline-offset:3px; }
 .project-option input { flex-shrink:0; inline-size:18px; block-size:18px; margin:0; accent-color:var(--accent); }
+/* 이미지 크기는 공통 설정에서 HTML width/height로 정합니다. 긴 이름에도 아이콘이
+   눌리거나 클릭을 가로채지 않도록 하고, 원본 비율과 색상은 그대로 유지합니다. */
+.project-icon { display:block; flex:none; object-fit:contain; pointer-events:none; }
+.project-option>span, .project-label { min-inline-size:0; overflow-wrap:anywhere; }
+.project-label { flex:1; }
 .project-selection-summary { margin:16px 0 8px!important; color:var(--ink)!important; font-weight:600; }
 .project-funding-note { margin:0!important; font-size:11px!important; }
 .project-fallback-links { display:grid; gap:8px; }

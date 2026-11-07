@@ -1,5 +1,7 @@
 # Ev-Cabinet
 
+[한국어 안내 — 한글.md](./한글.md)
+
 Personal developer homepage for [evilack](https://github.com/evilack), featuring QuietMic and selected work.
 
 - Website: https://evilack.github.io/

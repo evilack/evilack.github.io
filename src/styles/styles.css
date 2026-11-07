@@ -72,7 +72,8 @@ footer{padding:27px 0 36px;display:flex;justify-content:space-between;gap:20px;c
 @media(max-width:640px){
   .site-header,main,footer{width:min(100% - 36px,var(--max))}
   .site-header{height:70px}
-  nav{gap:16px}  .hero{padding:56px 0}
+  nav{gap:16px}
+  .hero{padding:56px 0}
   h1{font-size:46px}
   .hero-copy>p{font-size:15px}
   .section-heading{align-items:start}

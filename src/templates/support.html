@@ -1,0 +1,50 @@
+<body class="support-page localized-page">
+  <a class="skip-link" href="#main">{{text.ui.skip}}</a>
+  {{{components.header}}}
+  <main id="main">
+    <section class="donate-intro">
+      <a class="back-link" href="{{urls.home}}">{{text.intro.back}}</a>
+      <p class="eyebrow"><span></span> {{text.intro.kicker}}</p>
+      <h1>{{text.intro.title}}<br><em>{{text.intro.emphasis}}</em></h1>
+      <p class="donate-lead">{{text.intro.lead}}<br>{{text.intro.leadContinuation}}</p>
+    </section>
+    <div class="donate-layout">
+      <section class="donation-copy" aria-labelledby="why-title">
+        <p class="section-kicker">{{text.why.kicker}}</p>
+        <h2 id="why-title">{{{components.whyTitle}}}</h2>
+        <p>{{text.why.paragraph0}}</p>
+        <p>{{text.why.paragraph1}}</p>
+        {{{components.fundUses}}}
+        <p class="signature">{{text.why.thanks}} <br><strong>{{author}} <span>{{text.why.role}}</span></strong></p>
+      </section>
+      <aside class="donation-card" aria-labelledby="donation-title">
+        <span class="heart" aria-hidden="true">♡</span>
+        <p class="section-kicker">{{text.payment.kicker}}</p>
+        <h2 id="donation-title">{{text.payment.title}}</h2>
+        <p>{{text.payment.description}}</p>
+        
+        {{{components.projectPicker}}}
+        
+        
+        
+        
+        
+        <p class="support-amount-note" id="{{dom.amountNoteId}}">{{text.payment.amountHint}} <span>{{text.payment.terms}}</span></p>
+        {{{components.paymentLink}}}
+        <p class="payment-caption">{{text.payment.caption}}</p>
+        <div class="donation-footnote">
+          <p>{{text.payment.footnote0}}</p>
+          <p>{{text.payment.footnote1}}</p>
+        </div>
+      </aside>
+    </div>
+    <section class="donation-faq">
+      <div><p class="section-kicker">{{text.faq.kicker}}</p><h2>{{text.faq.title}}</h2></div>
+      {{{components.faq}}}
+    </section>
+  </main>
+  {{{components.footer}}}
+  
+
+
+</body>

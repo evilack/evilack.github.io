@@ -2,32 +2,28 @@
 <html lang="ko" data-page="home">
 <head>
   <meta charset="utf-8">
-  <script src="./site-language.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ev-Cabinet — 개발자 최인규가 만든 앱과 프로젝트를 소개하는 개인 홈페이지입니다.">
   <meta name="theme-color" content="#f4f5ef">
   <title>Ev-Cabinet — 최인규의 앱과 프로젝트</title>
+  <script type="application/json" id="site-settings">{"localization":{"default":"en","query":"lang","storage":"ev-cabinet-language","languages":[{"code":"en","name":"English"},{"code":"ko","name":"한국어"}]},"pages":{"home":{"routes":{"en":"index.html","ko":"index-ko.html"},"aliases":{}},"support":{"routes":{"en":"donate.html","ko":"donate-ko.html"},"aliases":{"donate-en.html":"en"}}},"dom":{"settingsId":"site-settings","languageLinkClass":"language-link","pickerId":"support-project-picker","paymentId":"paypal-support","summaryId":"project-selection-summary","fallbackId":"project-fallback-links","radioName":"support-project","radioIdPrefix":"project-","choiceNoteId":"project-choice-note","amountNoteId":"support-amount-note"}}</script>
+  <script src="./assets/home-IJCI4ZMP.js" data-site-settings="site-settings"></script>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=2e5b2b41e98e">
+  <link rel="stylesheet" href="./localization.css?v=6668c1dfbd92">
   <link rel="canonical" href="https://evilack.github.io/index-ko.html">
   <link rel="alternate" hreflang="en" href="https://evilack.github.io/index.html">
   <link rel="alternate" hreflang="ko" href="https://evilack.github.io/index-ko.html">
   <link rel="alternate" hreflang="x-default" href="https://evilack.github.io/index.html">
-  <link rel="stylesheet" href="./localization.css?v=ef51e6a49b3e">
 </head>
 <body class="home-page localized-page">
   <a class="skip-link" href="#main">본문으로 바로가기</a>
   <header class="site-header">
-    <a class="brand" href="./index-ko.html" aria-label="홈으로">
-      <span class="brand-mark" aria-hidden="true">EV</span>
-      <span>Ev-Cabinet</span>
-    </a>
-    <nav aria-label="주요 메뉴">
-      <a href="./index-ko.html#app">프로젝트</a>
+    <a class="brand" href="./index-ko.html" aria-label="홈으로"><span class="brand-mark" aria-hidden="true">EV</span><span>Ev-Cabinet</span></a>
+    <nav aria-label="주요 메뉴"><a href="./index-ko.html#app">프로젝트</a>
       <a href="https://evilack.github.io/portfolio/">포트폴리오</a>
       <a class="support-nav" href="./donate-ko.html">개발 후원</a>
-      <a class="language-link" href="./index.html?lang=en" lang="en" hreflang="en">English</a>
-    </nav>
+      <a class="language-link" href="./index.html?lang=en" lang="en" hreflang="en">English</a></nav>
   </header>
 
   <main id="main">
@@ -39,7 +35,7 @@
       <div class="hero-copy">
         <p>게임 엔진과 실시간 시스템을 다뤄온 경험으로, 일상의 작은 마찰을 줄이는 제품을 설계합니다.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#app">프로젝트 살펴보기 <span aria-hidden="true">↓</span></a>
+          <a class="button button-primary" href="./index-ko.html#app">프로젝트 살펴보기 <span aria-hidden="true">↓</span></a>
           <a class="button button-quiet" href="https://evilack.github.io/portfolio/">경력 포트폴리오</a>
         </div>
       </div>
@@ -65,12 +61,7 @@
             <h3>QuietMic</h3>
           </div>
           <p class="app-description">키보드 타건음과 주변 소음을 실시간으로 줄여 주는 가벼운 Windows 가상 마이크입니다. 오디오는 PC 밖으로 전송하거나 저장하지 않습니다.</p>
-          <ul class="feature-list">
-            <li><span aria-hidden="true">01</span> RNNoise 기반 실시간 소음 제거</li>
-            <li><span aria-hidden="true">02</span> 키보드 저주파 진동을 줄이는 하이패스 필터</li>
-            <li><span aria-hidden="true">03</span> 자연스러운 음성부터 조용한 환경까지 프리셋 제공</li>
-            <li><span aria-hidden="true">04</span> 한국어를 포함한 8개 언어 지원</li>
-          </ul>
+          <ul class="feature-list"><li><span aria-hidden="true">01</span> RNNoise 기반 실시간 소음 제거</li><li><span aria-hidden="true">02</span> 키보드 저주파 진동을 줄이는 하이패스 필터</li><li><span aria-hidden="true">03</span> 자연스러운 음성부터 조용한 환경까지 프리셋 제공</li><li><span aria-hidden="true">04</span> 한국어를 포함한 8개 언어 지원</li></ul>
           <div class="app-actions">
             <a class="button button-outline" href="https://github.com/evilack/QuietMic" target="_blank" rel="noreferrer">소스 보기 <span aria-hidden="true">↗</span></a>
             <a class="button button-primary" href="https://github.com/evilack/QuietMic/releases" target="_blank" rel="noreferrer">다운로드 <span aria-hidden="true">↓</span></a>
@@ -104,15 +95,12 @@
       </div>
     </section>
 
-    <div class="tech-list" role="group" aria-label="주요 기술">
-      <span>C++20</span><span>Unreal Engine 5</span><span>렌더링</span><span>월드 스트리밍</span><span>빌드 및 도구</span><span>Slint</span><span>RNNoise</span>
-    </div>
+    <div class="tech-list" role="group" aria-label="주요 기술"><span>C++20</span><span>Unreal Engine 5</span><span>렌더링</span><span>월드 스트리밍</span><span>빌드 및 도구</span><span>Slint</span><span>RNNoise</span></div>
   </main>
 
-  <footer>
-    <span>© 2026 Ev-Cabinet</span>
-    <span>서울에서 정성을 담아 만듭니다.</span>
-    <a href="./donate-ko.html">Ev-Cabinet 개발 후원</a>
-  </footer>
+  <footer><span>© 2026 Ev-Cabinet</span><span>서울에서 정성을 담아 만듭니다.</span><a href="./donate-ko.html">Ev-Cabinet 개발 후원</a></footer>
+
+
 </body>
+
 </html>

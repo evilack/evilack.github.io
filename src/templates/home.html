@@ -1,0 +1,80 @@
+<body class="home-page localized-page">
+  <a class="skip-link" href="#main">{{text.ui.skip}}</a>
+  {{{components.header}}}
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-title">
+        <p class="eyebrow"><span></span> {{text.hero.kicker}}</p>
+        <h1 id="hero-title">{{text.hero.title}}<br><em>{{text.hero.emphasis}}</em></h1>
+      </div>
+      <div class="hero-copy">
+        <p>{{text.hero.description}}</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="{{urls.work}}">{{text.hero.primary}} <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="{{urls.portfolio}}">{{text.hero.secondary}}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="{{anchors.work}}" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">{{text.work.kicker}}</p>
+          <h2 id="work-title">{{text.work.title}}</h2>
+        </div>
+        <p class="section-index">{{featured.sequence}} / {{featured.name}}</p>
+      </div>
+
+      <article class="app-card">
+        <div class="app-visual">
+          <img src="{{featured.screenshot.src}}" alt="{{text.work.imageAlt}}" width="{{featured.screenshot.width}}" height="{{featured.screenshot.height}}">
+        </div>
+        <div class="app-copy">
+          <div class="app-meta"><span>{{featured.platform}}</span><span>{{text.work.license}}</span></div>
+          <div class="app-name">
+            <img src="{{featured.icon.src}}" alt="" width="{{featured.icon.width}}" height="{{featured.icon.height}}">
+            <h3>{{featured.name}}</h3>
+          </div>
+          <p class="app-description">{{text.work.description}}</p>
+          {{{components.features}}}
+          <div class="app-actions">
+            <a class="button button-outline" href="{{urls.featuredSource}}" target="_blank" rel="noreferrer">{{text.work.source}} <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="{{urls.featuredReleases}}" target="_blank" rel="noreferrer">{{text.work.download}} <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="about" id="{{anchors.about}}" aria-labelledby="about-title">
+      <div>
+        <p class="section-kicker">{{text.about.kicker}}</p>
+        <h2 id="about-title">{{text.about.title}}<br>{{text.about.continuation}}</h2>
+      </div>
+      <div class="about-copy">
+        <p>{{text.about.description}}</p>
+        <a class="portfolio-link" href="{{urls.portfolio}}">{{text.about.link}} <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="home-support" id="{{anchors.support}}" aria-labelledby="support-title">
+      <div class="home-support-card">
+        <div class="home-support-copy">
+          <p class="section-kicker">{{text.support.kicker}}</p>
+          <h2 id="support-title">{{text.support.title}}</h2>
+          <p>{{text.support.description}}</p>
+        </div>
+        <div class="home-support-action">
+          <a class="button button-primary" href="{{urls.support}}">{{text.support.link}} <span aria-hidden="true">→</span></a>
+          <p>{{text.support.terms}}</p>
+        </div>
+      </div>
+    </section>
+
+    {{{components.technologies}}}
+  </main>
+
+  {{{components.footer}}}
+
+
+</body>

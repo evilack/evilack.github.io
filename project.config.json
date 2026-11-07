@@ -1,0 +1,97 @@
+{
+  "paths": {
+    "site": "src/data/site.json",
+    "locales": "src/locales",
+    "templates": "src/templates",
+    "styles": "src/styles",
+    "assets": "src/assets",
+    "runtime": {
+      "home": "src/runtime/home.js",
+      "support": "src/runtime/support.js"
+    },
+    "output": ".",
+    "staging": ".publish/site",
+    "evidence": "docs/evidence"
+  },
+  "preview": {
+    "host": "127.0.0.1",
+    "port": 4174
+  },
+  "publication": {
+    "repository": "evilack/evilack.github.io",
+    "branch": "main",
+    "timezone": "Asia/Seoul",
+    "pollMilliseconds": 10000,
+    "timeoutMilliseconds": 600000,
+    "output": ".",
+    "sources": [
+      "src",
+      "tools",
+      "package.json",
+      "pnpm-lock.yaml",
+      "pnpm-workspace.yaml",
+      "README.md",
+      "한글.md",
+      ".gitignore"
+    ],
+    "remove": [
+      "site-language.js",
+      "support-projects.js",
+      "tools/site-header.mjs",
+      "tools/sync-site-header.mjs",
+      "tools/sync-support-projects.mjs"
+    ],
+    "workflowName": "pages build and deployment"
+  },
+  "build": {
+    "target": "es2022",
+    "hashLength": 12,
+    "bundleDirectory": "assets",
+    "sourceMap": true,
+    "styles": {
+      "base": {
+        "source": "styles.css",
+        "output": "styles.css"
+      },
+      "support": {
+        "source": "support.css",
+        "output": "support.css"
+      },
+      "localization": {
+        "source": "localization.css",
+        "output": "localization.css"
+      }
+    },
+    "legacyOutputs": [
+      "site-language.js",
+      "support-projects.js"
+    ],
+    "virtualDirectory": ".bundle",
+    "manifestFile": ".site-manifest.json"
+  },
+  "verification": {
+    "widths": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "colorSchemes": [
+      "light",
+      "dark"
+    ],
+    "height": 1000,
+    "comparisonWidths": [
+      390,
+      1440
+    ],
+    "browserCandidates": [
+      "C:/Program Files/Google/Chrome/Application/chrome.exe",
+      "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
+      "/usr/bin/google-chrome",
+      "/usr/bin/chromium",
+      "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+    ]
+  }
+}

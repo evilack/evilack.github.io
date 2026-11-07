@@ -1,0 +1,147 @@
+{
+  "home": {
+    "description": "{brand} — Apps and projects by independent developer {author}.",
+    "title": "{brand} — Apps by {author}",
+    "hero": {
+      "kicker": "Independent developer",
+      "title": "Complex problems.",
+      "emphasis": "Quiet solutions.",
+      "description": "Drawing on my experience with game engines and real-time systems, I design products that reduce everyday friction.",
+      "primary": "Explore projects",
+      "secondary": "Career portfolio"
+    },
+    "work": {
+      "kicker": "Selected product",
+      "title": "Turning ideas into products",
+      "imageAlt": "{featured} microphone input and processing status screen",
+      "license": "Open source · MIT",
+      "description": "A lightweight virtual microphone for Windows that reduces keyboard sounds and background noise in real time. Your audio stays on your PC and is never recorded.",
+      "features": [
+        "Real-time noise suppression powered by RNNoise",
+        "High-pass filtering to reduce low-frequency keyboard vibrations",
+        "Presets for natural speech and quieter environments",
+        "Eight languages, including Korean"
+      ],
+      "source": "View source",
+      "download": "Download"
+    },
+    "about": {
+      "kicker": "Engine programmer · 18+ years",
+      "title": "From engines to products,",
+      "continuation": "I get to the root of the problem.",
+      "description": "I have analyzed and stabilized the foundations of projects, from Unreal Engine 5 upgrades and rendering optimization to world streaming, collision data, and build infrastructure.",
+      "link": "View experience and projects"
+    },
+    "support": {
+      "kicker": "Support independent development",
+      "title": "Keep useful tools growing.",
+      "description": "If {brand}'s apps and projects have been useful to you, help support their development and maintenance. Contributions are voluntary and shared across all {brand} projects.",
+      "link": "View support details",
+      "terms": "{currency} · One-time support · No subscription"
+    },
+    "technologies": {
+      "label": "Core technologies",
+      "items": [
+        "C++20",
+        "Unreal Engine 5",
+        "Rendering",
+        "World Streaming",
+        "Build & Tooling",
+        "Slint",
+        "RNNoise"
+      ]
+    },
+    "footer": {
+      "location": "Built with care in Seoul.",
+      "support": "Support {brand}"
+    }
+  },
+  "support": {
+    "description": "Support the development and maintenance of {brand}'s apps and projects with a voluntary, one-time contribution.",
+    "title": "Support {brand}",
+    "intro": {
+      "back": "←   {brand} home",
+      "kicker": "Support independent development",
+      "title": "Small support.",
+      "emphasis": "Lasting progress.",
+      "lead": "Thank you for using {brand}'s apps and projects.",
+      "leadContinuation": "If they've been useful to you, help keep them growing."
+    },
+    "why": {
+      "kicker": "Thank you for your support",
+      "title": "Useful tools,<br>built to last.",
+      "paragraph0": "{brand} builds apps and projects that make everyday tasks a little easier. Your support helps keep these tools useful, maintained, and improving over time.",
+      "paragraph1": "Contributions support {brand}'s apps and projects as a whole: improving features, fixing problems, and making the experience better for everyone.",
+      "uses": [
+        {
+          "title": "Development and maintenance",
+          "description": "Bug fixes, compatibility improvements, and feature updates"
+        },
+        {
+          "title": "Testing",
+          "description": "Quality checks across devices and environments"
+        },
+        {
+          "title": "Running costs",
+          "description": "Domains, hosting, and development tools"
+        }
+      ],
+      "thanks": "Thank you for helping these projects grow.",
+      "role": "/ {brand} developer"
+    },
+    "payment": {
+      "kicker": "One-time support",
+      "title": "Give what feels right.",
+      "description": "Support {brand}'s work with an amount that suits you.",
+      "amountHint": "Choose your contribution amount on {provider}.",
+      "terms": "{currency} · One-time support",
+      "button": "Support with <span class=\"paypal-word\">{provider}</span><span aria-hidden=\"true\">↗</span>",
+      "caption": "Continue to {provider} to enter your amount and pay.",
+      "footnote0": "Support is optional. It does not change app features or access.",
+      "footnote1": "{provider} does not support payments between accounts registered in South Korea."
+    },
+    "picker": {
+      "note": "Choose a project to cheer for. Its name will appear in the {provider} payment item.",
+      "legend": "Project to cheer for",
+      "fallback": "Project-specific {provider} support links",
+      "summaryPrefix": "Cheering for: ",
+      "funding": "Your choice expresses which project you are cheering for. Contributions support development and maintenance across all {brand} apps and projects."
+    },
+    "faq": {
+      "kicker": "A little clarity",
+      "title": "About your support",
+      "items": [
+        {
+          "question": "Which projects does my contribution support?",
+          "answer": "Choose a project to cheer for; its name is shown in the {provider} payment item. This is shared support for all {brand} apps and projects. Contributions help fund development, maintenance, testing, and running costs."
+        },
+        {
+          "question": "Will I be charged every month?",
+          "answer": "No. This is a one-time contribution, not an automatically renewing subscription. Enter your preferred {currency} amount on {provider} and review it before paying."
+        },
+        {
+          "question": "Does contributing unlock features or priority support?",
+          "answer": "No extra features or priority support are included. Your contribution is a voluntary way to support {brand}'s development and maintenance."
+        },
+        {
+          "question": "Will my name or payment details be published?",
+          "answer": "This website does not publish supporter names or payment records. If we would like to include you in a future thank-you message, we will ask for your permission first."
+        }
+      ]
+    },
+    "footer": {
+      "thanks": "Thank you.",
+      "home": "Home"
+    }
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "homeLabel": "Home",
+    "navLabel": "Main navigation",
+    "nav": {
+      "work": "Work",
+      "portfolio": "Portfolio",
+      "support": "Support"
+    }
+  }
+}

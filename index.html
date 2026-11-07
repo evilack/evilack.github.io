@@ -2,32 +2,28 @@
 <html lang="en" data-page="home">
 <head>
   <meta charset="utf-8">
-  <script src="./site-language.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ev-Cabinet — Apps and projects by independent developer Choi In-gyu.">
   <meta name="theme-color" content="#f4f5ef">
   <title>Ev-Cabinet — Apps by Choi In-gyu</title>
+  <script type="application/json" id="site-settings">{"localization":{"default":"en","query":"lang","storage":"ev-cabinet-language","languages":[{"code":"en","name":"English"},{"code":"ko","name":"한국어"}]},"pages":{"home":{"routes":{"en":"index.html","ko":"index-ko.html"},"aliases":{}},"support":{"routes":{"en":"donate.html","ko":"donate-ko.html"},"aliases":{"donate-en.html":"en"}}},"dom":{"settingsId":"site-settings","languageLinkClass":"language-link","pickerId":"support-project-picker","paymentId":"paypal-support","summaryId":"project-selection-summary","fallbackId":"project-fallback-links","radioName":"support-project","radioIdPrefix":"project-","choiceNoteId":"project-choice-note","amountNoteId":"support-amount-note"}}</script>
+  <script src="./assets/home-IJCI4ZMP.js" data-site-settings="site-settings"></script>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=2e5b2b41e98e">
+  <link rel="stylesheet" href="./localization.css?v=6668c1dfbd92">
   <link rel="canonical" href="https://evilack.github.io/index.html">
   <link rel="alternate" hreflang="en" href="https://evilack.github.io/index.html">
   <link rel="alternate" hreflang="ko" href="https://evilack.github.io/index-ko.html">
   <link rel="alternate" hreflang="x-default" href="https://evilack.github.io/index.html">
-  <link rel="stylesheet" href="./localization.css?v=ef51e6a49b3e">
 </head>
 <body class="home-page localized-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="./index.html" aria-label="Home">
-      <span class="brand-mark" aria-hidden="true">EV</span>
-      <span>Ev-Cabinet</span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="./index.html#app">Work</a>
+    <a class="brand" href="./index.html" aria-label="Home"><span class="brand-mark" aria-hidden="true">EV</span><span>Ev-Cabinet</span></a>
+    <nav aria-label="Main navigation"><a href="./index.html#app">Work</a>
       <a href="https://evilack.github.io/portfolio/">Portfolio</a>
       <a class="support-nav" href="./donate.html">Support</a>
-      <a class="language-link" href="./index-ko.html?lang=ko" lang="ko" hreflang="ko">한국어</a>
-    </nav>
+      <a class="language-link" href="./index-ko.html?lang=ko" lang="ko" hreflang="ko">한국어</a></nav>
   </header>
 
   <main id="main">
@@ -39,7 +35,7 @@
       <div class="hero-copy">
         <p>Drawing on my experience with game engines and real-time systems, I design products that reduce everyday friction.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#app">Explore projects <span aria-hidden="true">↓</span></a>
+          <a class="button button-primary" href="./index.html#app">Explore projects <span aria-hidden="true">↓</span></a>
           <a class="button button-quiet" href="https://evilack.github.io/portfolio/">Career portfolio</a>
         </div>
       </div>
@@ -65,12 +61,7 @@
             <h3>QuietMic</h3>
           </div>
           <p class="app-description">A lightweight virtual microphone for Windows that reduces keyboard sounds and background noise in real time. Your audio stays on your PC and is never recorded.</p>
-          <ul class="feature-list">
-            <li><span aria-hidden="true">01</span> Real-time noise suppression powered by RNNoise</li>
-            <li><span aria-hidden="true">02</span> High-pass filtering to reduce low-frequency keyboard vibrations</li>
-            <li><span aria-hidden="true">03</span> Presets for natural speech and quieter environments</li>
-            <li><span aria-hidden="true">04</span> Eight languages, including Korean</li>
-          </ul>
+          <ul class="feature-list"><li><span aria-hidden="true">01</span> Real-time noise suppression powered by RNNoise</li><li><span aria-hidden="true">02</span> High-pass filtering to reduce low-frequency keyboard vibrations</li><li><span aria-hidden="true">03</span> Presets for natural speech and quieter environments</li><li><span aria-hidden="true">04</span> Eight languages, including Korean</li></ul>
           <div class="app-actions">
             <a class="button button-outline" href="https://github.com/evilack/QuietMic" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
             <a class="button button-primary" href="https://github.com/evilack/QuietMic/releases" target="_blank" rel="noreferrer">Download <span aria-hidden="true">↓</span></a>
@@ -95,7 +86,7 @@
         <div class="home-support-copy">
           <p class="section-kicker">Support independent development</p>
           <h2 id="support-title">Keep useful tools growing.</h2>
-          <p>If Ev-Cabinet's apps and projects have been useful to you, help support their development and maintenance. Contributions are voluntary and shared across all Ev-Cabinet projects.</p>
+          <p>If Ev-Cabinet&#39;s apps and projects have been useful to you, help support their development and maintenance. Contributions are voluntary and shared across all Ev-Cabinet projects.</p>
         </div>
         <div class="home-support-action">
           <a class="button button-primary" href="./donate.html">View support details <span aria-hidden="true">→</span></a>
@@ -104,15 +95,12 @@
       </div>
     </section>
 
-    <div class="tech-list" role="group" aria-label="Core technologies">
-      <span>C++20</span><span>Unreal Engine 5</span><span>Rendering</span><span>World Streaming</span><span>Build &amp; Tooling</span><span>Slint</span><span>RNNoise</span>
-    </div>
+    <div class="tech-list" role="group" aria-label="Core technologies"><span>C++20</span><span>Unreal Engine 5</span><span>Rendering</span><span>World Streaming</span><span>Build &amp; Tooling</span><span>Slint</span><span>RNNoise</span></div>
   </main>
 
-  <footer>
-    <span>© 2026 Ev-Cabinet</span>
-    <span>Built with care in Seoul.</span>
-    <a href="./donate.html">Support Ev-Cabinet</a>
-  </footer>
+  <footer><span>© 2026 Ev-Cabinet</span><span>Built with care in Seoul.</span><a href="./donate.html">Support Ev-Cabinet</a></footer>
+
+
 </body>
+
 </html>

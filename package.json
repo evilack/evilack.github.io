@@ -1,0 +1,31 @@
+{
+  "name": "ev-cabinet-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync:header": "node tools/build-site.mjs",
+    "check:header": "node tools/build-site.mjs --check",
+    "verify:header": "node tools/verify-shared-header.mjs",
+    "preview": "node tools/preview-server.mjs",
+    "test": "node --test tools/*.test.mjs",
+    "sync:projects": "node tools/build-site.mjs",
+    "verify:home": "node tools/verify-homepage.mjs",
+    "verify:locale": "node tools/verify-support-locale.mjs",
+    "verify:paypal": "node tools/verify-paypal-link.mjs",
+    "verify:history": "node tools/verify-history.mjs",
+    "build": "node tools/build-site.mjs",
+    "check:generated": "node tools/build-site.mjs --check",
+    "prepare:publish": "node tools/prepare-publish.mjs",
+    "verify:projects": "node tools/verify-support-projects.mjs",
+    "verify:home-support": "node tools/verify-home-support.mjs",
+    "verify:published": "node tools/verify-published.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "pngjs": "7.0.0",
+    "puppeteer-core": "25.16.0"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}

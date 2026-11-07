@@ -1,0 +1,37 @@
+/* Shared controls and language-specific typesetting; original design lives in styles.css. */
+.localized-page .site-header { gap:16px; }
+.localized-page .site-header .brand { flex-shrink:0; }
+.localized-page .site-header nav { gap:20px; }
+.site-header nav a { display:inline-flex; align-items:center; min-block-size:32px; min-inline-size:24px; }
+.language-link { min-inline-size:32px; white-space:nowrap; text-decoration:underline; text-underline-offset:4px; }
+.support-nav { color:var(--ink); white-space:nowrap; }
+html[lang="en"] .localized-page { letter-spacing:-.015em; }
+html[lang="en"] .localized-page h2 { letter-spacing:-.04em; }
+html[lang="en"] .home-page h1 { font-size:clamp(42px,5.4vw,70px); letter-spacing:-.055em; line-height:1.08; }
+.home-page .feature-list li { line-height:1.6; }
+.home-page footer a { min-block-size:32px; display:inline-flex; align-items:center; }
+.home-support { container-type:inline-size; margin-block-start:28px; }
+.home-support-card { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:40px; padding:40px 48px; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface-soft); }
+.home-support .section-kicker { margin-block-end:14px; color:var(--accent-deep); }
+.home-support h2 { font-size:clamp(1.6rem,1.3rem + .8vw,2rem); }
+.home-support-copy>p:last-child { max-inline-size:65ch; margin:16px 0 0; color:var(--muted); font-size:14px; line-height:1.85; word-break:keep-all; }
+.home-support-action { display:flex; flex-direction:column; align-items:center; gap:12px; max-inline-size:260px; }
+.home-support-action .button { min-inline-size:190px; }
+.home-support-action p { margin:0; color:var(--muted); font-size:11px; line-height:1.7; text-align:center; }
+@container(max-width:640px) {
+  .home-support-card { grid-template-columns:minmax(0,1fr); gap:24px; padding:30px 26px; }
+  .home-support-action { align-items:flex-start; max-inline-size:100%; }
+  .home-support-action p { text-align:start; }
+}
+@media(max-width:760px) {
+  .localized-page .site-header { height:auto; min-height:82px; flex-wrap:wrap; padding-block:16px; gap:12px; }
+  .localized-page .site-header nav { flex:1 1 100%; flex-wrap:wrap; gap:4px 18px; }
+  .localized-page .site-header nav>a { display:inline-flex; }
+}
+@media(max-width:640px) {
+  .localized-page .site-header .brand { font-size:16px; gap:8px; }
+  .localized-page .site-header nav { font-size:12px; gap:4px 16px; }
+  html[lang="en"] .home-page h1 { font-size:clamp(36px,9vw,46px); }
+  html[lang="ko"] .home-page h1 { font-size:clamp(32px,8.7vw,46px); line-height:1.18; }
+  .home-page .about h2 { overflow-wrap:break-word; }
+}

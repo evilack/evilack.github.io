@@ -1,0 +1,152 @@
+{
+  "site": {
+    "name": "Ev-Cabinet",
+    "mark": "EV",
+    "origin": "https://evilack.github.io/",
+    "copyrightYear": 2026,
+    "author": {
+      "en": "Choi In-gyu",
+      "ko": "최인규"
+    },
+    "links": {
+      "portfolio": "https://evilack.github.io/portfolio/",
+      "featuredSource": "https://github.com/evilack/QuietMic",
+      "featuredReleases": "https://github.com/evilack/QuietMic/releases"
+    }
+  },
+  "localization": {
+    "default": "en",
+    "query": "lang",
+    "storage": "ev-cabinet-language",
+    "languages": [
+      {
+        "code": "en",
+        "name": "English"
+      },
+      {
+        "code": "ko",
+        "name": "한국어"
+      }
+    ]
+  },
+  "pages": {
+    "home": {
+      "template": "home.html",
+      "routes": {
+        "en": "index.html",
+        "ko": "index-ko.html"
+      },
+      "aliases": {},
+      "themeColor": "#f4f5ef"
+    },
+    "support": {
+      "template": "support.html",
+      "routes": {
+        "en": "donate.html",
+        "ko": "donate-ko.html"
+      },
+      "aliases": {
+        "donate-en.html": "en"
+      },
+      "themeColor": "#101411"
+    }
+  },
+  "navigation": [
+    {
+      "label": "work",
+      "page": "home",
+      "anchor": "work"
+    },
+    {
+      "label": "portfolio",
+      "link": "portfolio"
+    },
+    {
+      "label": "support",
+      "page": "support",
+      "className": "support-nav"
+    }
+  ],
+  "anchors": {
+    "work": "app",
+    "about": "about",
+    "support": "support"
+  },
+  "featured": {
+    "project": "quietmic",
+    "platform": "Windows 11",
+    "sequence": "01",
+    "screenshot": "quietmicScreenshot",
+    "icon": "quietmicIcon"
+  },
+  "support": {
+    "defaultProject": "all",
+    "query": "project",
+    "storage": "ev-cabinet-support-project",
+    "paymentOrigin": "https://www.paypal.com",
+    "projects": [
+      {
+        "id": "all",
+        "name": null,
+        "labels": {
+          "en": "All {brand} projects",
+          "ko": "{brand} 전체"
+        },
+        "payment": {
+          "url": "https://www.paypal.com/ncp/payment/U3EX8XP6BREYA",
+          "itemName": "Ev-Cabinet — One-time developer support"
+        }
+      },
+      {
+        "id": "quietmic",
+        "name": "QuietMic",
+        "labels": null,
+        "payment": {
+          "url": "https://www.paypal.com/ncp/payment/WWM6KYZ4E3S2W",
+          "itemName": "Ev-Cabinet — QuietMic support"
+        }
+      },
+      {
+        "id": "mdownloader",
+        "name": "MDownloader",
+        "labels": null,
+        "payment": {
+          "url": "https://www.paypal.com/ncp/payment/8SAZVLEDCZFNU",
+          "itemName": "Ev-Cabinet — MDownloader support"
+        }
+      }
+    ],
+    "currency": "USD",
+    "providerName": "PayPal"
+  },
+  "dom": {
+    "settingsId": "site-settings",
+    "languageLinkClass": "language-link",
+    "pickerId": "support-project-picker",
+    "paymentId": "paypal-support",
+    "summaryId": "project-selection-summary",
+    "fallbackId": "project-fallback-links",
+    "radioName": "support-project",
+    "radioIdPrefix": "project-",
+    "choiceNoteId": "project-choice-note",
+    "amountNoteId": "support-amount-note"
+  },
+  "assets": {
+    "favicon": {
+      "source": "favicon.svg",
+      "output": "favicon.svg"
+    },
+    "quietmicScreenshot": {
+      "source": "quietmic.png",
+      "output": "assets/quietmic.png",
+      "width": 1600,
+      "height": 1000
+    },
+    "quietmicIcon": {
+      "source": "quietmic-icon.png",
+      "output": "assets/quietmic-icon.png",
+      "width": 52,
+      "height": 52
+    }
+  }
+}

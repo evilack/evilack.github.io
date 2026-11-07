@@ -1,0 +1,38 @@
+{
+  "files": [
+    ".nojekyll",
+    "assets/home-IJCI4ZMP.js",
+    "assets/home-IJCI4ZMP.js.map",
+    "assets/quietmic-icon.png",
+    "assets/quietmic.png",
+    "assets/support-KAIWX2MN.js",
+    "assets/support-KAIWX2MN.js.map",
+    "donate-en.html",
+    "donate-ko.html",
+    "donate.html",
+    "favicon.svg",
+    "index-ko.html",
+    "index.html",
+    "localization.css",
+    "styles.css",
+    "support.css"
+  ],
+  "bytes": {
+    "styles.css": 5885,
+    "support.css": 5762,
+    "localization.css": 2324,
+    "favicon.svg": 211,
+    "assets/quietmic.png": 67838,
+    "assets/quietmic-icon.png": 9039,
+    "assets/home-IJCI4ZMP.js.map": 15948,
+    "assets/home-IJCI4ZMP.js": 2804,
+    "assets/support-KAIWX2MN.js.map": 22931,
+    "assets/support-KAIWX2MN.js": 4879,
+    "index.html": 6772,
+    "index-ko.html": 7026,
+    "donate.html": 8749,
+    "donate-ko.html": 9177,
+    "donate-en.html": 8749,
+    ".nojekyll": 0
+  }
+}

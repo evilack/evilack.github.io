@@ -1,4 +1,18 @@
 /* Support-only styles retained from the verified support import. */
+[hidden] { display:none!important; }
+.project-choice-note { margin:24px 0 16px!important; }
+.project-picker { min-inline-size:0; margin:0; padding:0; border:0; }
+.project-picker legend { padding:0; margin-block-end:12px; font-size:14px; font-weight:600; }
+.project-options { display:grid; gap:8px; }
+.project-option { display:flex; align-items:center; gap:12px; min-block-size:48px; padding:12px 14px; border:1px solid var(--line); border-radius:10px; background:var(--bg); font-size:1rem; line-height:1.4; cursor:pointer; }
+.project-option:has(input:checked) { border-color:var(--accent); background:var(--surface-soft); }
+.project-option:focus-within { outline:2px solid var(--accent); outline-offset:3px; }
+.project-option input { flex-shrink:0; inline-size:18px; block-size:18px; margin:0; accent-color:var(--accent); }
+.project-selection-summary { margin:16px 0 8px!important; color:var(--ink)!important; font-weight:600; }
+.project-funding-note { margin:0!important; font-size:11px!important; }
+.project-fallback-links { display:grid; gap:8px; }
+.project-fallback-links>p { margin:0 0 4px; font-size:13px; font-weight:600; }
+.project-fallback-links a { display:flex; align-items:center; justify-content:space-between; gap:12px; min-block-size:48px; padding:12px 14px; border:1px solid var(--line); border-radius:10px; font-size:14px; }
 summary:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
 summary:focus-visible { outline:3px solid var(--accent);outline-offset:4px }
 .donation-faq { display:grid;grid-template-columns:1fr 1.2fr;gap:90px;padding:74px 0 }

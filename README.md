@@ -42,6 +42,17 @@ Support is voluntary and shared across all Ev-Cabinet apps and projects.
 Enter your preferred USD amount directly on PayPal for a one-time contribution,
 without an automatically renewing subscription.
 
+Choose All Ev-Cabinet projects, QuietMic, or MDownloader. Each choice uses a
+separately named PayPal payment item so the project can be identified in the
+payment details. This expresses a project preference; contributions still
+support Ev-Cabinet as a whole.
+
+Edit support-projects.js to maintain the public project/payment catalog, then run:
+
+```sh
+node tools/sync-support-projects.mjs
+```
+
 ## Local preview
 
 Serve this directory with any static HTTP server. For example, with Python installed:

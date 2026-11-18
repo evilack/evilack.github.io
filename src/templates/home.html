@@ -44,6 +44,27 @@
           </div>
         </div>
       </article>
+
+      <p class="section-index project-index">02 / {{mdownloader.name}}</p>
+      <article class="app-card app-card--mdownloader">
+        <div class="app-visual app-visual--mdownloader">
+          <img src="{{mdownloader.media.src}}" alt="{{text.mdownloader.mediaAlt}}" width="{{mdownloader.media.width}}" height="{{mdownloader.media.height}}" loading="lazy">
+          <img src="{{mdownloader.downloads.src}}" alt="{{text.mdownloader.downloadsAlt}}" width="{{mdownloader.downloads.width}}" height="{{mdownloader.downloads.height}}" loading="lazy">
+        </div>
+        <div class="app-copy">
+          <div class="app-meta"><span>{{mdownloader.platform}}</span><span>{{text.mdownloader.type}}</span></div>
+          <div class="app-name">
+            <img src="{{mdownloader.icon.src}}" alt="" width="{{mdownloader.icon.width}}" height="{{mdownloader.icon.height}}" loading="lazy">
+            <h3>{{mdownloader.name}}</h3>
+          </div>
+          <p class="app-description">{{text.mdownloader.description}}</p>
+          {{{components.mdownloaderFeatures}}}
+          <div class="app-actions">
+            <a class="button button-outline" href="{{mdownloader.source}}" target="_blank" rel="noreferrer">{{text.work.source}} <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="{{mdownloader.homepage}}">{{text.mdownloader.homepage}} <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </article>
     </section>
 
     <section class="about" id="{{anchors.about}}" aria-labelledby="about-title">

@@ -25,6 +25,19 @@
       "source": "View source",
       "download": "Download"
     },
+    "mdownloader": {
+      "type": "Browser extension",
+      "description": "A browser extension that saves video and audio from web pages and manages downloads in one place. Choose quality and subtitles, and save the parts you need from supported streams and live broadcasts.",
+      "features": [
+        "Download MP4 and audio files, plus HLS, DASH and WebRTC streams",
+        "Choose quality, save and translate subtitles, or generate speech captions locally with an optional helper",
+        "Choose where supported live downloads start and save the portion received",
+        "Track progress and manage completed files in the side panel"
+      ],
+      "homepage": "Project website",
+      "mediaAlt": "Detected video and download controls in M Downloader",
+      "downloadsAlt": "Completed video and file controls in the M Downloader download manager"
+    },
     "about": {
       "kicker": "Engine programmer · 18+ years",
       "title": "From engines to products,",

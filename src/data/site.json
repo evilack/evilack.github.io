@@ -79,6 +79,19 @@
     "screenshot": "quietmicScreenshot",
     "icon": "quietmicIcon"
   },
+  "mdownloader": {
+    "name": "M Downloader",
+    "platform": "Chrome · Edge",
+    "source": "https://github.com/evilack/MDownloader",
+    "homepages": {
+      "ko": "https://evilack.github.io/MDownloader/index-ko.html?lang=ko",
+      "en": "https://evilack.github.io/MDownloader/index.html?lang=en"
+    },
+    "screenshots": {
+      "ko": {"media": "mdownloaderKoMedia", "downloads": "mdownloaderKoDownloads"},
+      "en": {"media": "mdownloaderEnMedia", "downloads": "mdownloaderEnDownloads"}
+    }
+  },
   "support": {
     "defaultProject": "all",
     "query": "project",
@@ -136,6 +149,18 @@
     "amountNoteId": "support-amount-note"
   },
   "assets": {
+    "mdownloaderKoMedia": {
+      "source": "mdownloader-ko-media-list.png", "output": "assets/mdownloader-ko-media-list.png", "width": 420, "height": 213
+    },
+    "mdownloaderKoDownloads": {
+      "source": "mdownloader-ko-downloads.png", "output": "assets/mdownloader-ko-downloads.png", "width": 420, "height": 280
+    },
+    "mdownloaderEnMedia": {
+      "source": "mdownloader-en-media-list.png", "output": "assets/mdownloader-en-media-list.png", "width": 420, "height": 283
+    },
+    "mdownloaderEnDownloads": {
+      "source": "mdownloader-en-downloads.png", "output": "assets/mdownloader-en-downloads.png", "width": 420, "height": 280
+    },
     "favicon": {
       "source": "favicon.svg",
       "output": "favicon.svg"

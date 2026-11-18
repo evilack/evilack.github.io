@@ -8,6 +8,23 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { PreferenceStore } from '../src/runtime/preferences.js';
 const project = await loadProject();
+
+test('both homepages include the approved M Downloader card with localized media and project links', async () => {
+  const files = await createSiteFiles(project);
+  for (const [language, filename, action] of [['ko', 'index-ko.html', '프로젝트 홈페이지'], ['en', 'index.html', 'Project website']]) {
+    const home = files.get(filename).toString();
+    assert.ok(home.includes('<h3>M Downloader</h3>'), filename);
+    assert.ok(home.indexOf('<h3>QuietMic</h3>') < home.indexOf('<h3>M Downloader</h3>'));
+    assert.ok(home.includes('href="https://github.com/evilack/MDownloader"'));
+    assert.ok(home.includes('https://evilack.github.io/MDownloader/' + (language === 'ko' ? 'index-ko.html?lang=ko' : 'index.html?lang=en')));
+    assert.ok(home.includes(action));
+    for (const view of ['media-list', 'downloads']) {
+      const image = `assets/mdownloader-${language}-${view}.png`;
+      assert.ok(home.includes(image), image);
+      assert.ok(files.get(image)?.length > 0, image);
+    }
+  }
+});
 test('blocked storage property and read/write failures stay within the preference boundary', () => {
   const unavailable = new PreferenceStore(() => { throw new Error('Denied'); });
   assert.equal(unavailable.read('test'), null);assert.equal(unavailable.write('test', 'value'), false);

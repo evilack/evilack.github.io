@@ -43,14 +43,18 @@ h1 em{color:var(--accent);font-style:normal}
 .section-heading .section-kicker{margin-bottom:8px}
 h2{margin:0;font-size:clamp(28px,3vw,40px);line-height:1.2;font-weight:620;letter-spacing:-.055em}
 .section-index{margin:0;color:var(--muted);font-size:12px}
+.project-index{margin:32px 0 16px}
 .app-card{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(360px,.9fr);overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
 .app-visual{min-height:540px;padding:46px;display:grid;place-items:center;background:var(--surface-soft)}
 .app-visual img{display:block;width:100%;height:auto;border-radius:15px;box-shadow:0 28px 70px color-mix(in srgb,var(--ink) 20%,transparent)}
+.app-visual--mdownloader{align-content:center;gap:18px}
+.app-visual--mdownloader img{max-width:420px}
 .app-copy{padding:58px 52px;display:flex;flex-direction:column;justify-content:center}
 .app-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;color:var(--muted);font-size:11px}
 .app-meta span:first-child{padding:5px 9px;border-radius:999px;background:var(--surface-soft);color:var(--accent-deep)}
 .app-name{display:flex;align-items:center;gap:14px;margin-bottom:20px}
 .app-name img{width:46px;height:46px}
+.app-card--mdownloader h3{font-size:clamp(24px,3.5vw,44px)}
 h3{margin:0;font-size:44px;line-height:1;font-weight:650;letter-spacing:-.06em}
 .app-description{margin:0 0 28px;color:var(--muted);font-size:14px;line-height:1.8;word-break:keep-all}
 .feature-list{display:grid;gap:13px;margin:0 0 34px;padding:0;list-style:none;font-size:12px}

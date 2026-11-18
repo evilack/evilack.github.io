@@ -48,9 +48,14 @@ function renderPage(project, language, family, assets, body) {
   const copyright = site.site.copyrightYear;
   const featured = { ...site.featured, name: names.featured,
     screenshot: assets.media[site.featured.screenshot], icon: assets.media[site.featured.icon] };
+  const mdownloader = { ...site.mdownloader, homepage: site.mdownloader.homepages[language],
+    icon: assets.media.mdownloaderIcon,
+    media: assets.media[site.mdownloader.screenshots[language].media],
+    downloads: assets.media[site.mdownloader.screenshots[language].downloads] };
   const components = { header: renderHeader(site, language, family, locale.ui), footer: renderFooter(site, language, family, text.footer) };
   if (text.work) {
     components.features = `<ul class="feature-list">${text.work.features.map((feature, index) => `<li><span aria-hidden="true">${String(index + 1).padStart(2, '0')}</span> ${escapeHtml(feature)}</li>`).join('')}</ul>`;
+    components.mdownloaderFeatures = `<ul class="feature-list">${text.mdownloader.features.map((feature, index) => `<li><span aria-hidden="true">${String(index + 1).padStart(2, '0')}</span> ${escapeHtml(feature)}</li>`).join('')}</ul>`;
     components.technologies = `<div class="tech-list" role="group" aria-label="${escapeHtml(text.technologies.label)}">${text.technologies.items.map(label => `<span>${escapeHtml(label)}</span>`).join('')}</div>`;
   }
   if (text.picker) {
@@ -82,7 +87,7 @@ function renderPage(project, language, family, assets, body) {
   <link rel="canonical" href="${escapeHtml(canonical)}">
   ${alternate.join('\n  ')}
 </head>
-${renderTemplate(body, { text, urls, featured, components, author: names.author, copyright, dom: site.dom, anchors: site.anchors })}
+${renderTemplate(body, { text, urls, featured, mdownloader, components, author: names.author, copyright, dom: site.dom, anchors: site.anchors })}
 </html>
 `;
 }
